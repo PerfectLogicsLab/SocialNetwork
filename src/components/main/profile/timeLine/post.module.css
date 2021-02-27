@@ -1,0 +1,77 @@
+.authorThumb {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+}
+
+.userAvatar {
+    height: 36px;
+    border-radius: 30px;
+    grid-row: 1/3;
+}
+
+.userName {
+    font-weight: 700;
+    color: #515365;
+}
+
+.userName:hover {
+    color: var(--orange);
+}
+
+.postTime {
+    font-size: 13px;
+    margin: 0;
+}
+
+.post {
+    display: grid;
+    padding: 25px;
+    grid-template-rows: 58px auto 39px;
+}
+
+.postHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.postFooter {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-top: 1px solid #e6ecf5;
+    padding-top: 20px;
+
+}
+
+.postFooter a{
+    color: var(--grey);
+}
+
+.postFooter a:hover{
+    color: var(--orange);
+}
+
+.options {
+    font-size: 23px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-weight: 700;
+    color: var(--grey);
+}
+
+.postText {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+}

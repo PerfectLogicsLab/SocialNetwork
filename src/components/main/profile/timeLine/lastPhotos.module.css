@@ -1,0 +1,14 @@
+.lastPhotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 23px 25px ;
+    border-top: 1px solid #e6ecf5;
+}
+
+.lastPhotos img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+.about {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #e6ecf5;
+}
+
+.personalInfo {
+    padding: 24px;
+    list-style: none;
+}
+
+ul {
+    border-top: 1px solid #e6ecf5;
+    margin:0 ;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 30px;
+    display: grid;
+    font-size: 13px;
+}
+
+.title {
+    color: #515365;
+    font-weight: 500;
+}
+
+.text {
+    font-weight: 400;
+}

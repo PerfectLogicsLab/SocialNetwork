@@ -1,0 +1,152 @@
+.profile {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-content: start;
+    margin: 0 auto;
+    width: -webkit-fill-available;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.headerWrapper {
+    position: relative;
+    display: grid;
+    grid-template-areas: 'art art'
+                         'leftPart rightPart';
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
+    margin: 40px 0 15px 0;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #e6ecf5;
+}
+
+.profileArt {
+    box-sizing: border-box;
+    height: 300px;
+    grid-area: art;
+    border-radius: 5px 5px 0  0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://valenciatong.files.wordpress.com/2017/04/cropped-colorpastel4a.jpg?w=2000&h=1200&crop=1");
+}
+
+.leftHeaderPart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    grid-area: leftPart;
+    padding-left: 30px;
+}
+
+.leftHeaderPart a , .rightHeaderPart a {
+    color: var(--grey);
+}
+
+.leftHeaderPart a:hover , .rightHeaderPart a:hover {
+    color: #515365;
+}
+
+.rightHeaderPart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    grid-area: rightPart;
+    padding-right: 30px;
+}
+
+.headerWrapper a {
+    display: grid;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.headerAuthor {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%,0);
+    text-align: center;
+    max-width: 200px;
+}
+
+.headerUserAvatar {
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+.circleLink {
+    border: 6px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: white;
+    width: 132px;
+    height: 132px;
+}
+
+.headerUserLink {
+    font-size: 22px;
+    color: #515365;
+}
+
+.headerUserLink:hover {
+    color: var(--orange);
+}
+
+.controlBlockButton {
+    position: absolute;
+    right: 38px;
+    top: 270px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.NavIcon {
+    font-size: 23px;
+    fill: white;
+}
+
+.NavBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+    color: white;
+}
+
+
+.rightHeaderPart a:last-child {
+    font-size: 23px;
+    padding-bottom: 10px;
+    color: var(--grey);
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a > span{
+    margin-right: 20px;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.orange {
+    background-color: var(--orange);
+}

@@ -1,0 +1,140 @@
+.header {
+    background-color: var(--dark);
+    position: sticky;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 70px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.leftPart {
+    display: grid;
+    grid-template-columns: 170px auto auto;
+}
+
+.rightPart {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+}
+
+.findBaton {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 28px 25px;
+}
+
+.notifications {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.notifications a{
+    font-size: 20px;
+    line-height: 80%;
+    padding: 30px 20px;
+}
+
+.header a {
+    color: white;
+}
+
+.pageName {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: auto;
+}
+
+.text {
+    min-width: 500px;
+    height: 70px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    background: #515365;
+    padding: 17px;
+    color: var(--grey);
+}
+
+.userAvatar {
+    height: 35px;
+    border-radius: 100%;
+}
+
+.authorThumb {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.state {
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--dark);
+    position: absolute;
+    left: 0;
+    background-color: red;
+    top: 0;
+    border-radius: 100%;
+}
+
+.avatar {
+    position: relative;
+    margin: 15px 0;
+}
+
+.authorName {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.authorSubtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 8px;
+    color: var(--grey);
+}
+
+.userName {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    padding: 24px 20px;
+}
+
+.friendReq, .chat, .notification {
+    display: grid;
+    position: relative;
+}
+
+.friendReq > span {
+    background-color: var(--blue);
+}
+
+.chat > span {
+    background-color: var(--purple);
+}
+
+.notification > span {
+    background-color: var(--orange);
+}
+
+.notifications span {
+    position: absolute;
+    top: 17px;
+    left: 32px;
+    height: 19px;
+    width: 19px;
+    border-radius: 100%;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+}
