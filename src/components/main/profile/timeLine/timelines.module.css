@@ -18,3 +18,10 @@
     color: #515365;
     margin: 23px auto 18px 25px;
 }
+
+.newPost {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 25px;
+    grid-column-gap: 15px;
+}

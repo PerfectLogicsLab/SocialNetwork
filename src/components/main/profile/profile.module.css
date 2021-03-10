@@ -3,10 +3,6 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     align-content: start;
-    margin: 0 auto;
-    width: -webkit-fill-available;
-    max-width: 1300px;
-    padding: 0 20px;
 }
 
 .headerWrapper {
@@ -47,6 +43,10 @@
 }
 
 .leftHeaderPart a:hover , .rightHeaderPart a:hover {
+    color: #515365;
+}
+
+.leftHeaderPart .active , .leftHeaderPart .active {
     color: #515365;
 }
 

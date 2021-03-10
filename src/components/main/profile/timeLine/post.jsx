@@ -2,7 +2,7 @@ import React from 'react';
 import s from './post.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-const Post = () => {
+const Post = (props) => {
     return (
 
                     <div className={s.post}>
@@ -19,27 +19,25 @@ const Post = () => {
                         </div>
                         <div className={s.postContent}>
                             <p className={s.postText}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dolor eum
-                                expedita id, ipsa magni modi molestias optio quam qui saepe veniam voluptatibus
-                                voluptatum. Commodi dolorem illo perspiciatis veniam voluptatibus.
+                                {props.textContent}
                             </p>
                         </div>
                         <div className={s.postFooter}>
                             <div>
                                 <a href="#">
                                     <FontAwesomeIcon className={s.icon} icon={['far', 'heart']} />
-                                    <span>8</span>
+                                    <span>{props.likedCount}</span>
                                 </a>
                                 likedUsers
                             </div>
                             <div>
                                 <a href="#">
                                     <FontAwesomeIcon className={s.icon} icon={['far', 'comment-dots']} />
-                                    <span>15</span>
+                                    <span>{props.commentCount}</span>
                                 </a>
                                 <a href="#">
                                     <FontAwesomeIcon className={s.icon} icon="exchange-alt" />
-                                    <span>24</span>
+                                    <span>{props.sharedCount}</span>
                                 </a>
 
                             </div>

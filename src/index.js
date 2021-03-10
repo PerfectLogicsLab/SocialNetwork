@@ -1,16 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
+import React from "react";
+import store from "./store/store";
+import reportWebVitals from './reportWebVitals';
+import App from "./App";
 import 'normalize.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+
+
+const renderDependingOnState = (state) =>{
+    //console.log(state);
+    ReactDOM.render(
+
+        <React.StrictMode>
+            <BrowserRouter>
+            <App state = {state}
+                 dispatch = {store.dispatch.bind(store)} />
+            </BrowserRouter>
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+};
+
+renderDependingOnState(store.getState());
+
+store.subscribe(() => {
+    const state = store.getState();
+    renderDependingOnState(state);
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
